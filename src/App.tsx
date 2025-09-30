@@ -116,7 +116,7 @@ function App() {
               />
             </div>
             <h1 className="text-4xl md:text-5xl font-extrabold text-gray-800 mb-4">
-              Olá, eu sou o {personalData.name}
+              Olá, me chamo {personalData.name}
             </h1>
             <p className="text-xl md:text-2xl text-gray-700 font-medium mb-6">
               {personalData.role}
