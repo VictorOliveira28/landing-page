@@ -15,6 +15,7 @@ import {
   Cloud,
   LayoutGrid,
 } from "lucide-react"; // Importando ícones Lucide React
+import perfilImg from "../assets/victor.png";
 
 // Componente principal da aplicação
 function App() {
@@ -105,7 +106,7 @@ function App() {
           >
             <div className="relative w-32 h-32 mb-6">
               <img
-                src="https://media.licdn.com/dms/image/v2/D4D03AQHrR8JQ-XKiiw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1713902288216?e=1758153600&v=beta&t=8XdKbUc4MWffsP7FsaO9Y2XRREnmScgWE6V7kNntqFM"
+                src={perfilImg}
                 alt="Foto de Perfil"
                 className="rounded-full border-4 border-white shadow-md w-full h-full object-cover"
                 onError={(e: React.SyntheticEvent<HTMLImageElement, Event>) => {
