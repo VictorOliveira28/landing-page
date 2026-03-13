@@ -2,17 +2,23 @@ import React from "react";
 import { Github, Linkedin } from "lucide-react";
 import { personalData } from "../data/portfolioData";
 import perfilImg from "../../assets/victor.png";
+import { Helmet } from "react-helmet-async";
 
 const Home = () => {
   return (
-    <section
+    <>
+      <Helmet>
+        <title>Victor Oliveira | Desenvolvedor Full Stack</title>
+        <meta name="description" content="Portfólio de Victor Oliveira, desenvolvedor especializado em Java, Spring Boot, ReactJS e arquitetura de microserviços." />
+      </Helmet>
+      <section
       id="home"
       className="flex flex-col items-center justify-center min-h-[calc(100vh-6rem)] text-center px-4 py-8 bg-gradient-to-br from-blue-100 to-purple-100 rounded-lg shadow-lg"
     >
       <div className="relative w-32 h-32 mb-6">
         <img
           src={perfilImg || "https://placehold.co/128x128/9CA3AF/FFFFFF?text=Foto"}
-          alt="Foto de Perfil"
+          alt={`Foto de Perfil de ${personalData.name}, Desenvolvedor Full Stack`}
           className="rounded-full border-4 border-white shadow-md w-full h-full object-cover"
           onError={(e: React.SyntheticEvent<HTMLImageElement, Event>) => {
             e.currentTarget.onerror = null;
@@ -50,7 +56,8 @@ const Home = () => {
           <Linkedin size={24} />
         </a>
       </div>
-    </section>
+      </section>
+    </>
   );
 };
 

@@ -6,10 +6,12 @@ import About from './pages/About';
 import Skills from './pages/Skills';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
+import { HelmetProvider } from 'react-helmet-async';
 
 function App() {
   return (
-    <Router>
+    <HelmetProvider>
+      <Router>
       <div className="min-h-screen bg-gray-100 font-sans antialiased text-gray-900">
         <Header />
         <main className="container mx-auto my-8 p-4">
@@ -24,6 +26,7 @@ function App() {
         <Footer />
       </div>
     </Router>
+    </HelmetProvider>
   );
 }
 
