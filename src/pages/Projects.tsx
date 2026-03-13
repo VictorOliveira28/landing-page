@@ -21,9 +21,7 @@ const Projects = () => {
               alt={project.title}
               className="w-full h-48 object-cover"
               onError={(e: React.SyntheticEvent<HTMLImageElement, Event>) => {
-                e.currentTarget.onerror = null;
-                e.currentTarget.src =
-                  "https://placehold.co/400x250/F0F0F0/2C2C2C?text=Projeto";
+                e.currentTarget.onerror = null;                
               }}
             />
             <div className="p-6 flex flex-col flex-grow">
