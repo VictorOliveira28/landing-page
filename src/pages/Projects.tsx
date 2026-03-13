@@ -22,10 +22,12 @@ const Projects = () => {
             key={project.id}
             className="bg-white flex flex-col rounded-lg shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-xl h-full"
           >
-            <img
+            <img              
               src={project.image}
-              alt={`Imagem do projeto: ${project.title}`}
+              alt={`Imagem do projeto: ${project.title}`}              
               className="w-full h-48 object-cover"
+              loading="lazy"
+              decoding="async"
               onError={(e: React.SyntheticEvent<HTMLImageElement, Event>) => {
                 e.currentTarget.onerror = null;
                 e.currentTarget.src = "https://placehold.co/600x400/9CA3AF/FFFFFF?text=Projeto";
