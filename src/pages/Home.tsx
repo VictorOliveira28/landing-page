@@ -1,7 +1,7 @@
 import React from "react";
 import { Github, Linkedin } from "lucide-react";
 import { personalData } from "../data/portfolioData";
-import perfilImg from "../../assets/victor.png";
+import perfilImg from "../../assets/victor.webp";
 import { Helmet } from "react-helmet-async";
 
 const Home = () => {
@@ -16,7 +16,8 @@ const Home = () => {
       className="flex flex-col items-center justify-center min-h-[calc(100vh-6rem)] text-center px-4 py-8 bg-gradient-to-br from-blue-100 to-purple-100 rounded-lg shadow-lg"
     >
       <div className="relative w-32 h-32 mb-6">
-        <img
+          <img
+            fetchPriority="high"
           src={perfilImg || "https://placehold.co/128x128/9CA3AF/FFFFFF?text=Foto"}
           alt={`Foto de Perfil de ${personalData.name}, Desenvolvedor Full Stack`}
           className="rounded-full border-4 border-white shadow-md w-full h-full object-cover"

@@ -41,7 +41,7 @@ export const projects = [
     description:
       "Um gerador de QR Code simples e eficiente, desenvolvido com Java 17, Spring Boot e Docker. Permite gerar códigos QR a partir de um texto, salvar no banco de dados e fazer download da imagem gerada.",
     link: "https://github.com/VictorOliveira28/qrcode-generate",
-    image: "../assets/gerador_qrcode.png",
+    image: "../assets/gerador_qrcode.webp",
   },
   {
     id: 2,
@@ -49,7 +49,7 @@ export const projects = [
     description:
       "Este projeto possui o objetivo principal criar uma plataforma de catálogo eficiente e flexível, utilizando a robustez do Spring Boot. Quero oferecer uma solução que facilite a organização e gerenciamento de informações relacionadas a produtos de uma determinada empresa, proporcionando uma experiência fluida e amigável.",
     link: "https://github.com/VictorOliveira28/project-catalogo",
-    image: "../assets/catalogo_produtos.png",
+    image: "../assets/catalogo_produtos.webp",
   },
   {
     id: 3,
@@ -57,7 +57,7 @@ export const projects = [
     description:
       "O DSCommerce é uma solução de e-commerce completa, construída com uma arquitetura moderna e escalável, focada em performance e robustez.",
     link: "https://github.com/VictorOliveira28/dscommerce",
-    image: "../assets/ecommerce.png",
+    image: "../assets/ecommerce.webp",
   },
   {
     id: 4,
@@ -65,6 +65,6 @@ export const projects = [
     description:
       "é um recurso didático focado nos quatro pilares fundamentais da Programação Orientada a Objetos (POO): Encapsulamento, Herança, Polimorfismo e Abstração.",
     link: "https://github.com/VictorOliveira28/Orientacao-a-objetos",
-    image: "../assets/orientacao_objetos.png",
+    image: "../assets/orientacao_objetos.webp",
   },
 ];
