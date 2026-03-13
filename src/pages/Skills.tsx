@@ -1,8 +1,14 @@
 import { skills } from "../data/portfolioData";
+import { Helmet } from "react-helmet-async";
 
 const Skills = () => {
   return (
-    <section
+    <>
+      <Helmet>
+        <title>Habilidades | Victor Oliveira</title>
+        <meta name="description" content="Conheça as habilidades técnicas de Victor Oliveira em desenvolvimento backend e frontend." />
+      </Helmet>
+      <section
       id="skills"
       className="min-h-[calc(100vh-6rem)] py-12 px-4 bg-gray-50 rounded-lg shadow-lg"
     >
@@ -23,6 +29,7 @@ const Skills = () => {
         ))}
       </div>
     </section>
+  </>
   );
 };
 

@@ -12,7 +12,7 @@ import {
 export const personalData = {
   name: "Victor Oliveira",
   role: "Desenvolvedor de Software",
-  bio: "Com experiência no desenvolvimento de soluções robustas e escaláveis, sou um desenvolvedor apaixonado por transformar ideias complexas em realidade através da tecnologia. Minha expertise abrange desde o backend com Java e Spring Boot até o frontend com ReactJS, passando por bancos de dados, mensageria e infraestrutura. Gosto de atuar buscando sempre as melhores práticas e soluções seguras e eficientes.",
+  bio: "Especialista em desenvolvimento de software full stack, com experiência sólida na criação de soluções backend e frontend robustas e escaláveis. Minha expertise abrange o desenvolvimento backend com Java, Spring Boot e APIs REST, além do frontend com ReactJS. Possuo vivência em mensageria e em arquitetura de microserviços, utilizando ferramentas de infraestrutura como Docker e bancos de dados para entregar produtos de alta performance e seguros.",
   characteristics: [
     "Focado em soluções eficientes e seguras",
     "Experiência em arquiteturas de microserviços",

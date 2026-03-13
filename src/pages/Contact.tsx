@@ -1,8 +1,14 @@
 import { Mail, Github, Linkedin } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 const Contact = () => {
   return (
-    <section
+    <>
+      <Helmet>
+        <title>Contato | Victor Oliveira</title>
+        <meta name="description" content="Entre em contato com Victor Oliveira, desenvolvedor full stack." />
+      </Helmet>
+      <section
       id="contact"
       className="min-h-[calc(100vh-6rem)] py-12 px-4 bg-gray-50 rounded-lg shadow-lg"
     >
@@ -47,6 +53,7 @@ const Contact = () => {
         </div>
       </div>
     </section>
+  </>
   );
 };
 

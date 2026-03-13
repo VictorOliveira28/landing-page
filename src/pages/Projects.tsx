@@ -1,9 +1,15 @@
 import React from "react";
 import { projects } from "../data/portfolioData";
+import { Helmet } from "react-helmet-async";
 
 const Projects = () => {
   return (
-    <section
+    <>
+      <Helmet>
+        <title>Projetos | Victor Oliveira</title>
+        <meta name="description" content="Conheça projetos desenvolvidos utilizando Java, ReactJS, Docker e arquitetura de microserviços." />
+      </Helmet>
+      <section
       id="projects"
       className="min-h-[calc(100vh-6rem)] py-12 px-4 bg-gray-50 rounded-lg shadow-lg"
     >
@@ -18,10 +24,11 @@ const Projects = () => {
           >
             <img
               src={project.image}
-              alt={project.title}
+              alt={`Imagem do projeto: ${project.title}`}
               className="w-full h-48 object-cover"
               onError={(e: React.SyntheticEvent<HTMLImageElement, Event>) => {
-                e.currentTarget.onerror = null;                
+                e.currentTarget.onerror = null;
+                e.currentTarget.src = "https://placehold.co/600x400/9CA3AF/FFFFFF?text=Projeto";
               }}
             />
             <div className="p-6 flex flex-col flex-grow">
@@ -44,6 +51,7 @@ const Projects = () => {
         ))}
       </div>
     </section>
+  </>
   );
 };
 
