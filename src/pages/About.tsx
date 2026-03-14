@@ -8,7 +8,7 @@ const About = () => {
       <Helmet>
         <title>Sobre | Victor Oliveira</title>
         <meta name="description" content="Saiba mais sobre a experiência de Victor Oliveira como desenvolvedor full stack." />
-      </Helmet>
+      </Helmet>      
       <section
       id="about"
       className="min-h-[calc(100vh-6rem)] py-12 px-4 bg-gray-50 rounded-lg shadow-lg"
