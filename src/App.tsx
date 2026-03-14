@@ -1,6 +1,7 @@
 import { Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
+import AnalyticsTracker from "./components/AnalyticsTracker";
 
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -21,6 +22,7 @@ function App() {
   return (
     <HelmetProvider>
       <Router>
+        <AnalyticsTracker />
         <div className="min-h-screen bg-gray-100 font-sans antialiased text-gray-900">
           <Header />
           <main className="container mx-auto my-8 p-4">          
