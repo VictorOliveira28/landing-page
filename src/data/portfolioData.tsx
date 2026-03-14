@@ -37,6 +37,13 @@ export const skills = [
 export const projects = [
   {
     id: 1,
+    title: "Site Institucional Prezensa",
+    description: "Este projeto consistiu na criação da plataforma institucional da Prezensa, com o objetivo de solidificar sua presença digital. Desenvolvido do zero ao deploy, o site prioriza uma navegação fluida e uma interface moderna, entregando uma experiência de usuário consistente e otimizada para os objetivos de negócio da empresa.",
+    link: "https://prezensa.com/",
+    image: "../assets/prezensa.webp",
+  },
+  {
+    id: 2,
     title: "Gerador de QRCode",
     description:
       "Um gerador de QR Code simples e eficiente, desenvolvido com Java 17, Spring Boot e Docker. Permite gerar códigos QR a partir de um texto, salvar no banco de dados e fazer download da imagem gerada.",
@@ -44,15 +51,15 @@ export const projects = [
     image: "../assets/gerador_qrcode.webp",
   },
   {
-    id: 2,
-    title: "Catalogo de Produtos",
+    id: 3,
+    title: "Catálogo de Produtos",
     description:
       "Este projeto possui o objetivo principal criar uma plataforma de catálogo eficiente e flexível, utilizando a robustez do Spring Boot. Quero oferecer uma solução que facilite a organização e gerenciamento de informações relacionadas a produtos de uma determinada empresa, proporcionando uma experiência fluida e amigável.",
     link: "https://github.com/VictorOliveira28/project-catalogo",
     image: "../assets/catalogo_produtos.webp",
   },
   {
-    id: 3,
+    id: 4,
     title: "E-Commerce (back-end)",
     description:
       "O DSCommerce é uma solução de e-commerce completa, construída com uma arquitetura moderna e escalável, focada em performance e robustez.",
@@ -60,7 +67,7 @@ export const projects = [
     image: "../assets/ecommerce.webp",
   },
   {
-    id: 4,
+    id: 5,
     title: "Orientação a Objetos",
     description:
       "é um recurso didático focado nos quatro pilares fundamentais da Programação Orientada a Objetos (POO): Encapsulamento, Herança, Polimorfismo e Abstração.",
