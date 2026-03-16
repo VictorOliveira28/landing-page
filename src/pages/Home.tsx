@@ -1,5 +1,5 @@
 import React from "react";
-import { Github, Linkedin } from "lucide-react";
+import { Github, Linkedin, Download } from "lucide-react";
 import { personalData } from "../data/portfolioData";
 import perfilImg from "../../assets/victor.webp";
 import { Helmet } from "react-helmet-async";
@@ -37,25 +37,41 @@ const Home = () => {
       <p className="text-lg text-gray-600 max-w-2xl leading-relaxed">
         Desenvolvedor apaixonado por construir soluções eficientes e impactantes.
       </p>
-      <div className="flex gap-4 mt-8">
-        <a
-          href="https://github.com/victorOliveira28/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="p-3 bg-gray-800 text-white rounded-full shadow-lg hover:bg-gray-700 transition duration-300"
-          aria-label="GitHub"
+      
+      {/* Container das ações flex flex-col ou flex-row dependendo da tela */}
+      <div className="flex flex-col sm:flex-row items-center gap-6 mt-8">
+        {/* Botão de Download do CV */}
+        
+        {/* Redes Sociais */}
+        <div className="flex gap-4">
+          <a
+            href="https://github.com/victorOliveira28/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-3 bg-gray-800 text-white rounded-full shadow-lg hover:bg-gray-700 transition duration-300"
+            aria-label="GitHub"
+          >
+            <Github size={24} />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/victoroliveira28/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-3 bg-blue-700 text-white rounded-full shadow-lg hover:bg-blue-600 transition duration-300"
+            aria-label="LinkedIn"
+          >
+            <Linkedin size={24} />
+            </a>
+            <a
+          href="/curriculo.pdf" // Caminho do arquivo na pasta public
+          download="Victor_Oliveira_CV.pdf"
+          className="flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-full shadow-lg hover:bg-blue-700 transition duration-300"
+          aria-label="Baixar Currículo"
         >
-          <Github size={24} />
+          <Download size={20} />
+          Baixar Currículo
         </a>
-        <a
-          href="https://www.linkedin.com/in/victoroliveira28/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="p-3 bg-blue-700 text-white rounded-full shadow-lg hover:bg-blue-600 transition duration-300"
-          aria-label="LinkedIn"
-        >
-          <Linkedin size={24} />
-        </a>
+        </div>
       </div>
       </section>
     </>

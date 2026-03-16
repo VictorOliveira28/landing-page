@@ -1,4 +1,4 @@
-import { Lightbulb } from "lucide-react";
+import { Lightbulb, FileText } from "lucide-react";
 import { personalData } from "../data/portfolioData";
 import { Helmet } from "react-helmet-async";
 
@@ -33,7 +33,17 @@ const About = () => {
               <span>{char}</span>
             </li>
           ))}
-        </ul>
+          </ul>
+          <div className="mt-10 flex justify-center border-t border-gray-100 pt-8">
+          <a
+            href="/curriculo.pdf"
+            download="Victor_Oliveira_CV.pdf"
+            className="flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-md shadow-md transition duration-300"
+          >
+            <FileText size={20} />
+            Acessar Currículo Completo
+          </a>
+        </div>
       </div>
     </section>
     </>
