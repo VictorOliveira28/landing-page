@@ -37,3 +37,4 @@ jobs:
           protocol: ftp 
           port: 21 
           passive: true
+          log-level: verbose
