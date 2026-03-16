@@ -36,3 +36,4 @@ jobs:
           server-dir: www/
           protocol: ftp 
           port: 21 
+          passive: true
