@@ -40,7 +40,7 @@ export const projects = [
     title: "Site Institucional Prezensa",
     description: "Este projeto consistiu na criação da plataforma institucional da Prezensa, com o objetivo de solidificar sua presença digital. Desenvolvido do zero ao deploy, o site prioriza uma navegação fluida e uma interface moderna, entregando uma experiência de usuário consistente e otimizada para os objetivos de negócio da empresa.",
     link: "https://prezensa.com/",
-    image: "../assets/prezensa.webp",
+    image: "../../assets/prezensa.webp",
   },
   {
     id: 2,
