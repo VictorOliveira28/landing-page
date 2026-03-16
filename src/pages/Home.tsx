@@ -36,13 +36,10 @@ const Home = () => {
       </p>
       <p className="text-lg text-gray-600 max-w-2xl leading-relaxed">
         Desenvolvedor apaixonado por construir soluções eficientes e impactantes.
-      </p>
-      
-      {/* Container das ações flex flex-col ou flex-row dependendo da tela */}
+      </p>      
+
       <div className="flex flex-col sm:flex-row items-center gap-6 mt-8">
-        {/* Botão de Download do CV */}
-        
-        {/* Redes Sociais */}
+
         <div className="flex gap-4">
           <a
             href="https://github.com/victorOliveira28/"
