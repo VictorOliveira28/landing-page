@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://victor-oliveira.kinghost.net/sitemap.xml
+Sitemap: https://victoroliveira.tech/sitemap.xml
