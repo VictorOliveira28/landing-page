@@ -18,13 +18,13 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          cache: 'npm' # Ajustado para fazer cache do NPM e acelerar os próximos deploys
+          cache: 'npm'
 
       - name: Instalar dependências (Clean Install)
-        run: npm ci # Usa o package-lock.json para uma instalação exata e segura
+        run: npm ci
 
       - name: Build do projeto Vite
-        run: npm run build # O comando correto que você pontuou!
+        run: npm run build 
 
       - name: Deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
