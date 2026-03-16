@@ -1,7 +1,7 @@
 import React from "react";
 import { Github, Linkedin, Download } from "lucide-react";
 import { personalData } from "../data/portfolioData";
-import perfilImg from "../../assets/victor.webp";
+import perfilImg from "../assets/victor.webp";
 import { Helmet } from "react-helmet-async";
 
 const Home = () => {
