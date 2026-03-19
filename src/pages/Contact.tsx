@@ -7,6 +7,7 @@ const Contact = () => {
       <Helmet>
         <title>Contato | Victor Oliveira</title>
         <meta name="description" content="Entre em contato com Victor Oliveira, desenvolvedor full stack." />
+        <link rel="canonical" href="https://victoroliveira.tech/contato"/>
       </Helmet>
       <section
       id="contact"

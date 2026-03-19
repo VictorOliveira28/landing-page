@@ -8,6 +8,7 @@ const Projects = () => {
       <Helmet>
         <title>Projetos | Victor Oliveira</title>
         <meta name="description" content="Conheça projetos desenvolvidos utilizando Java, ReactJS, Docker e arquitetura de microserviços." />
+        <link rel="canonical" href="https://victoroliveira.tech/projetos"/>
       </Helmet>
       <section
       id="projects"

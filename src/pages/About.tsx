@@ -8,6 +8,7 @@ const About = () => {
       <Helmet>
         <title>Sobre | Victor Oliveira</title>
         <meta name="description" content="Saiba mais sobre a experiência de Victor Oliveira como desenvolvedor full stack." />
+        <link rel="canonical" href="https://victoroliveira.tech/sobre"/>
       </Helmet>      
       <section
       id="about"

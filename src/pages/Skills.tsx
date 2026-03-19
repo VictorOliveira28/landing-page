@@ -7,6 +7,7 @@ const Skills = () => {
       <Helmet>
         <title>Habilidades | Victor Oliveira</title>
         <meta name="description" content="Conheça as habilidades técnicas de Victor Oliveira em desenvolvimento backend e frontend." />
+        <link rel="canonical" href="https://victoroliveira.tech/habilidades"/>
       </Helmet>
       <section
       id="skills"

@@ -10,6 +10,7 @@ const Home = () => {
       <Helmet>
         <title>Victor Oliveira | Desenvolvedor Full Stack</title>
         <meta name="description" content="Portfólio de Victor Oliveira, desenvolvedor especializado em Java, Spring Boot, ReactJS e arquitetura de microserviços." />
+        <link rel="canonical" href="https://victoroliveira.tech/"/>
       </Helmet>
       <section
       id="home"
