@@ -1,1 +1,83 @@
 @import "tailwindcss";
+
+@theme {
+  --font-mono: "Space Mono", monospace;
+  --font-sans: "Space Mono", monospace;
+  
+  --color-cyan-vibrant: #00d4ff;
+  --color-dark-bg: #030303;
+  --color-dark-panel: #0a0a0a;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: var(--color-dark-bg);
+    color: #e5e5e5;
+    font-family: var(--font-mono);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply uppercase tracking-widest text-[#fff];
+  }
+}
+
+@layer utilities {
+  .cyber-box {
+    @apply border border-cyan-vibrant/30 bg-dark-panel shadow-[0_0_15px_rgba(0,212,255,0.05)] relative overflow-hidden;
+  }
+  
+  .cyber-box::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(0, 212, 255, 0.8), transparent);
+  }
+
+  .cyber-glitch-text {
+    text-shadow: 0 0 5px rgba(0, 212, 255, 0.5);
+    color: #fff;
+  }
+  
+  .neon-button {
+    @apply flex items-center justify-center gap-2 border px-6 py-3 font-bold transition-all duration-300;
+    border-color: rgba(0, 212, 255, 0.8);
+    background-color: rgba(0, 212, 255, 0.05);
+    color: var(--color-cyan-vibrant);
+    box-shadow: 0 0 10px rgba(0, 212, 255, 0.1), inset 0 0 5px rgba(0, 212, 255, 0.1);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+  
+  .neon-button:hover {
+    @apply bg-cyan-vibrant/10 text-cyan-vibrant;
+    box-shadow: 0 0 25px rgba(0, 212, 255, 0.8), inset 0 0 15px rgba(0, 212, 255, 0.4);
+    border-color: #00ffff;
+  }
+
+  .scanlines {
+    background: linear-gradient(
+      to bottom,
+      rgba(255,255,255,0),
+      rgba(255,255,255,0) 50%,
+      rgba(0,0,0,0.2) 50%,
+      rgba(0,0,0,0.2)
+    );
+    background-size: 100% 4px;
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    pointer-events: none;
+    z-index: 50;
+  }
+  
+  .hex-grid-bg {
+    background-image: 
+      radial-gradient(rgba(0, 212, 255, 0.15) 1px, transparent 1px),
+      radial-gradient(rgba(0, 212, 255, 0.05) 1px, transparent 1px);
+    background-size: 20px 20px, 40px 40px;
+    background-position: 0 0, 10px 10px;
+  }
+}

@@ -1,77 +1,52 @@
-import { Link, useLocation } from "react-router-dom";
-import { Home, User, Lightbulb, Briefcase, Mail } from "lucide-react";
 import "../index.css";
 
 const Header = () => {
-  const location = useLocation();
-  const currentPath = location.pathname;
-
   return (
-    <header className="bg-white shadow-md p-4 sticky top-0 z-50 rounded-b-lg">
-      <nav className="container mx-auto flex flex-wrap justify-center md:justify-between items-center">
-        <div className="text-2xl font-bold text-blue-600 mb-2 md:mb-0">
-          <Link to="/">{"<Victor Oliveira />"}</Link>
+    <header className="bg-[#0a0a0a]/80 backdrop-blur-md border-b border-cyan-vibrant/30 p-3 sm:p-4 sticky top-0 z-50">
+      <nav className="container mx-auto flex flex-col items-center gap-3">
+        <div className="text-lg md:text-xl font-bold text-cyan-vibrant cyber-glitch-text transition-all duration-300 hover:tracking-widest self-center md:self-start w-full text-center md:text-left">
+          <a href="#home">// victor.dev</a>
         </div>
-        <ul className="flex flex-wrap gap-x-6 gap-y-2 text-lg">
+        <ul className="flex flex-wrap justify-center gap-x-4 gap-y-2 text-xs sm:text-sm md:text-base text-[#a0a0a0] w-full max-w-full">
           <li>
-            <Link
-              to="/"
-              className={`flex items-center gap-1 p-2 rounded-md transition duration-300 ${
-                currentPath === "/"
-                  ? "bg-blue-500 text-white shadow-md"
-                  : "text-gray-700 hover:bg-gray-100"
-              }`}
+            <a
+              href="#home"
+              className="transition-all duration-300 hover:text-cyan-vibrant"
             >
-              <Home size={18} /> Início
-            </Link>
+              cd /home
+            </a>
           </li>
           <li>
-            <Link
-              to="/sobre"
-              className={`flex items-center gap-1 p-2 rounded-md transition duration-300 ${
-                currentPath === "/sobre"
-                  ? "bg-blue-500 text-white shadow-md"
-                  : "text-gray-700 hover:bg-gray-100"
-              }`}
+            <a
+              href="#about"
+              className="transition-all duration-300 hover:text-cyan-vibrant"
             >
-              <User size={18} /> Sobre Mim
-            </Link>
+              cd /sobre
+            </a>
           </li>
           <li>
-            <Link
-              to="/habilidades"
-              className={`flex items-center gap-1 p-2 rounded-md transition duration-300 ${
-                currentPath === "/habilidades"
-                  ? "bg-blue-500 text-white shadow-md"
-                  : "text-gray-700 hover:bg-gray-100"
-              }`}
+            <a
+              href="#skills"
+              className="transition-all duration-300 hover:text-cyan-vibrant"
             >
-              <Lightbulb size={18} /> Habilidades
-            </Link>
+              cd /habilidades
+            </a>
           </li>
           <li>
-            <Link
-              to="/projetos"
-              className={`flex items-center gap-1 p-2 rounded-md transition duration-300 ${
-                currentPath === "/projetos"
-                  ? "bg-blue-500 text-white shadow-md"
-                  : "text-gray-700 hover:bg-gray-100"
-              }`}
+            <a
+              href="#projects"
+              className="transition-all duration-300 hover:text-cyan-vibrant"
             >
-              <Briefcase size={18} /> Projetos
-            </Link>
+              cd /projetos
+            </a>
           </li>
           <li>
-            <Link
-              to="/contato"
-              className={`flex items-center gap-1 p-2 rounded-md transition duration-300 ${
-                currentPath === "/contato"
-                  ? "bg-blue-500 text-white shadow-md"
-                  : "text-gray-700 hover:bg-gray-100"
-              }`}
+            <a
+              href="#contact"
+              className="transition-all duration-300 hover:text-cyan-vibrant"
             >
-              <Mail size={18} /> Contato
-            </Link>
+              cd /contato
+            </a>
           </li>
         </ul>
       </nav>
