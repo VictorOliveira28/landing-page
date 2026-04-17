@@ -1,44 +1,33 @@
-import { Suspense, lazy } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import AnalyticsTracker from "./components/AnalyticsTracker";
+import ParticlesBackground from "./components/ParticlesBackground";
 
 import Header from './components/Header';
 import Footer from './components/Footer';
 
-const Home = lazy(() => import('./pages/Home'));
-const About = lazy(() => import('./pages/About'));
-const Skills = lazy(() => import('./pages/Skills'));
-const Projects = lazy(() => import('./pages/Projects'));
-const Contact = lazy(() => import('./pages/Contact'));
-
-const Loading = () => (
-  <div className="flex justify-center items-center h-64">
-    <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
-  </div>
-);
+import Home from './pages/Home';
+import About from './pages/About';
+import Skills from './pages/Skills';
+import Projects from './pages/Projects';
+import Contact from './pages/Contact';
 
 function App() {
   return (
     <HelmetProvider>
-      <Router>
-        <AnalyticsTracker />
-        <div className="min-h-screen bg-gray-100 font-sans antialiased text-gray-900">
-          <Header />
-          <main className="container mx-auto my-8 p-4">          
-            <Suspense fallback={<Loading />}>
-              <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/sobre" element={<About />} />
-                <Route path="/habilidades" element={<Skills />} />
-                <Route path="/projetos" element={<Projects />} />
-                <Route path="/contato" element={<Contact />} />
-              </Routes>
-            </Suspense>
-          </main>
-          <Footer />
-        </div>
-      </Router>
+      <AnalyticsTracker />
+      <div className="min-h-screen font-sans antialiased text-[#e5e5e5] hex-grid-bg relative z-0">
+        <div className="scanlines"></div>
+        <ParticlesBackground />
+        <Header />
+        <main className="container mx-auto p-4 md:p-6 relative z-10 w-full flex flex-col gap-12 sm:gap-24 overflow-hidden">          
+          <Home />
+          <About />
+          <Skills />
+          <Projects />
+          <Contact />
+        </main>
+        <Footer />
+      </div>
     </HelmetProvider>
   );
 }
